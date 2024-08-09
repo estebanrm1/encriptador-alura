@@ -17,15 +17,16 @@
 
 main{
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 40px;
+    justify-content: space-between;
+    margin: 1rem;
 }
 
 .textarea1{
-    border: none;
+    border-radius: 24px;
     color: #ffffff;
-    margin-top: 90px;
+    margin-top: 50px;
     text-transform: lowercase;
+    padding: 10px;
 }
 
 .textarea1:focus{
@@ -44,11 +45,9 @@ main{
 .textarea2{
     background-image: url(img/Muñeco.png);
     background-repeat: no-repeat;
-    border: none;
+    padding: 10px;
     border-radius: 24px;
     color: #ffffff;
-    margin-top: 20px;
-    padding-left: 20px;
     height: 277px;
     width: 275px;
 }
@@ -104,6 +103,21 @@ main{
     color: #ffffff;
 }
 
+footer{
+    padding: 5px;
+    text-align: center;
+    color: #0A3871;
+    background-color:rgb(255, 255, 255);
+    position: relative;
+}
+
+footer a{
+    background-color:rgb(255, 255, 255)
+}
+
+footer small{
+    background-color:rgb(255, 255, 255)
+}
 
 
 /* dispositivos medianos */
@@ -118,21 +132,27 @@ main{
         justify-content: center;
     }
 
+    .textarea1{
+        text-align: center;
+        width: 100%;
+    }
+
     .textarea2{
+        text-align: center;
         display: none;
         background-image: none;
         height: 229px;
         width: 516px;
         margin: 0;
-        padding: 0;
     }
 
     .container{
-        padding: 0 20px;
+        padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .noMensaje{
@@ -141,8 +161,8 @@ main{
     }
 
     .btn-copiar{
+        margin-top: 0;
         margin-left: 0;
-        width: 90%;
         display: none;
     }
 }
@@ -162,8 +182,18 @@ main{
         margin: 0;
     }
 
+    .textarea1{
+        max-width: 337px; 
+        height: 299px;
+        margin-top: 1rem ;
+    }
+
+    h6{
+        margin-top: 0;
+    }
+
     .textarea2{
-        margin: 0;
+        margin: 1rem 0;
         background-image: none;
         display: none;
     }
@@ -172,14 +202,15 @@ main{
         display: block;
     }
 
-    .botones button{
+    .botones > button{
         width: 100%;
         margin: 10px 0px;
     }
 
     .btn-copiar {
-        width: 100%; /* Botón de copiar ocupa todo el ancho disponible */
+        width: 100%;
         display: none;
-        margin-top: 0;
+        margin-bottom: 2rem;
+        margin-top: 10px;
     }
 }
